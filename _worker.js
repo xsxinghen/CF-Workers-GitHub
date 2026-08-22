@@ -518,7 +518,19 @@ async function githubInterface() {
 					<p>💾 commit文件：<span class="url-part">github.com/hunshcn/project/blob/123/filename</span></p>
 					<p>🖨️ gist：<span class="url-part">gist.githubusercontent.com/cielpy/123/raw/cmd.py</span></p>
 				</div>
-							
+
+				<section class="card" id="plugin">
+    				<div class="card-title"><span class="dot"></span> 浏览器插件</div>
+    				<div class="plugin-box">
+      				<div class="plugin-text">
+        				<p>安装插件后，访问 GitHub 时自动按规则通过加速节点下载，无需手动拼接链接。支持 Edge / Chrome 及兼容内核浏览器。</p>
+        				<button class="btn" id="pluginDownBtn"><i class="fa-solid fa-download"></i> 下载插件（.crx）</button>
+        				<div class="hint" style="margin-top:10px"><i class="fa-solid fa-circle-info"></i> 点击下载后会弹出蓝奏云提取码；若浏览器提示"无法添加来自此网站的应用"，请先在 <code>chrome://extensions</code> 开启"开发者模式"后拖入 .crx 安装。</div>
+      					</div>
+    				</div>
+  				</section>
+			</div>
+			<footer>
         		<!--底部波浪-->
         		<div class="footer ch">
             		<div class="container">
@@ -529,9 +541,21 @@ async function githubInterface() {
                 		<a target="_blank" href="https://www.cloudflare.com/">Cloudflare pages</a> 上.
             		</div>
         		</div>
+			</footer>
+
+			<div class="modal-mask" id="pluginModal" role="dialog" aria-modal="true">
+  				<div class="modal">
+  				 	<div class="ic"><i class="fa-solid fa-key"></i></div>
+   					<h3>蓝奏云提取码</h3>
+    				<p>插件托管于蓝奏云，下载前请记下提取码（点击下方按钮跳转下载页）。</p>
+    				<div class="pw">提取码：<b>awaone</b></div>
+    				<div style="margin-top:16px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+      				<a class="btn" href="https://q3r.lanzoul.com/b00l31loob" target="_blank" rel="noopener" id="pluginGo"><i class="fa-solid fa-arrow-up-right-from-square"></i> 前往下载页</a>
+      				<button class="btn btn-ghost" id="pluginClose"><i class="fa-solid fa-xmark"></i> 关闭</button>
+    				</div>
+  				</div>
 			</div>
-
-
+			
 			<script>
 				function toSubmit(e) {
 					e.preventDefault();
