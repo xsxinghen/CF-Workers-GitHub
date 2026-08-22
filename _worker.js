@@ -525,8 +525,8 @@ async function githubInterface() {
              		   	<h4>© 2026 星痕. All Rights Reserved. 
                 		<br>
                 		由
-                		<a target="_blank" href="https://github.com/Geekertao/CF-Workers-GitHub-Proxy/">CF-Workers-GitHub</a> 提供技术支持 & 部署于
-                		<a target="_blank" href="https://www.cloudflare.com/">Cloudflare pages</a>
+                		<a target="_blank" href="https://github.com/cmliu/CF-Workers-GitHub/">CF-Workers-GitHub</a> 提供技术支持 & 部署于
+                		<a target="_blank" href="https://www.cloudflare.com/">Cloudflare pages</a> 上.
             		</div>
         		</div>
 			</div>
