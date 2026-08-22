@@ -519,8 +519,8 @@ async function githubInterface() {
 					<p>🖨️ gist：<span class="url-part">gist.githubusercontent.com/cielpy/123/raw/cmd.py</span></p>
 				</div>
 			</div>
-
-        <!--底部波浪-->
+			<br>
+        	<!--底部波浪-->
   	        <div id="hans-bolang"></div><script src="https://api.vvhan.com/api/script/bolang"></script>
         	</div>
         	<div class="push"></div><!--push在此为footer占位，高度和footer的一样-->
@@ -528,7 +528,7 @@ async function githubInterface() {
         	<div class="footer ch">
             	<div class="container">
                 	<h4>© 2026 星痕. All Rights Reserved. /
-                
+                	<br>
                 	Powered by
                 	<a target="_blank" href="https://github.com/Geekertao/CF-Workers-GitHub-Proxy/">CF-Workers-GitHub-Proxy </a>提供技术支持 & 托管于
                 	<a target="_blank" href="https://www.cloudflare.com/">Cloudflare </a>
