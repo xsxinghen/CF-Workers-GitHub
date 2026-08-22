@@ -518,22 +518,23 @@ async function githubInterface() {
 					<p>💾 commit文件：<span class="url-part">github.com/hunshcn/project/blob/123/filename</span></p>
 					<p>🖨️ gist：<span class="url-part">gist.githubusercontent.com/cielpy/123/raw/cmd.py</span></p>
 				</div>
+							
+        		<!--底部波浪-->
+  	        	<div id="hans-bolang"></div><script src="https://api.vvhan.com/api/script/bolang"></script>
+    	    	</div>
+     		   	<div class="push"></div><!--push在此为footer占位，高度和footer的一样-->
+    	    	</div>
+        		<div class="footer ch">
+            		<div class="container">
+             		   	<h4>© 2026 星痕. All Rights Reserved. 
+                		<br>
+                		由
+                		<a target="_blank" href="https://github.com/Geekertao/CF-Workers-GitHub-Proxy/">CF-Workers-GitHub </a>提供技术支持 & 部署于
+                		<a target="_blank" href="https://www.cloudflare.com/">Cloudflare pages</a>
+            		</div>
+        		</div>
 			</div>
-			<br>
-        	<!--底部波浪-->
-  	        <div id="hans-bolang"></div><script src="https://api.vvhan.com/api/script/bolang"></script>
-        	</div>
-        	<div class="push"></div><!--push在此为footer占位，高度和footer的一样-->
-        	</div>
-        	<div class="footer ch">
-            	<div class="container">
-                	<h4>© 2026 星痕. All Rights Reserved. /
-                	<br>
-                	Powered by
-                	<a target="_blank" href="https://github.com/Geekertao/CF-Workers-GitHub-Proxy/">CF-Workers-GitHub-Proxy </a>提供技术支持 & 托管于
-                	<a target="_blank" href="https://www.cloudflare.com/">Cloudflare </a>
-            	</div>
-        	</div>
+
 
 			<script>
 				function toSubmit(e) {
