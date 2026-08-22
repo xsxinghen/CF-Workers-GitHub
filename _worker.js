@@ -510,6 +510,14 @@ async function githubInterface() {
 					<p>⚠️ 注意：暂不支持文件夹下载</p>
 				</div>
 
+				<div class="example">
+					<div class="example-title">📃 合法输入示例：</div>
+					<p>📄 分支源码：<span class="url-part">github.com/hunshcn/project/archive/master.zip</span></p>
+					<p>📁 release源码：<span class="url-part">github.com/hunshcn/project/archive/v0.1.0.tar.gz</span></p>
+					<p>📂 release文件：<span class="url-part">github.com/hunshcn/project/releases/download/v0.1.0/example.zip</span></p>
+					<p>💾 commit文件：<span class="url-part">github.com/hunshcn/project/blob/123/filename</span></p>
+					<p>🖨️ gist：<span class="url-part">gist.githubusercontent.com/cielpy/123/raw/cmd.py</span></p>
+				</div>
 
 				<section class="example">
     				<div class="example-title">🧩 浏览器插件：</div>
