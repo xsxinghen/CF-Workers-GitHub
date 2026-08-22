@@ -520,10 +520,6 @@ async function githubInterface() {
 				</div>
 							
         		<!--底部波浪-->
-  	        	<div id="hans-bolang"></div><script src="https://api.vvhan.com/api/script/bolang"></script>
-    	    	</div>
-     		   	<div class="push"></div><!--push在此为footer占位，高度和footer的一样-->
-    	    	</div>
         		<div class="footer ch">
             		<div class="container">
              		   	<h4>© 2026 星痕. All Rights Reserved. 
