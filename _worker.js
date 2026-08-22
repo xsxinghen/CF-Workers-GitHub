@@ -477,7 +477,7 @@ async function githubInterface() {
 			</style>
 		</head>
 		<body>
-			<a href="https://github.com/cmliu/CF-Workers-GitHub" target="_blank" class="github-corner" aria-label="View source on Github">
+			<a href="https://github.com/xsxinghen" target="_blank" class="github-corner" aria-label="View source on Github">
 				<svg viewBox="0 0 250 250" aria-hidden="true">
 					<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
 					<path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
@@ -519,6 +519,21 @@ async function githubInterface() {
 					<p>🖨️ gist：<span class="url-part">gist.githubusercontent.com/cielpy/123/raw/cmd.py</span></p>
 				</div>
 			</div>
+
+        <!--底部波浪-->
+  	        <div id="hans-bolang"></div><script src="https://api.vvhan.com/api/script/bolang"></script>
+        	</div>
+        	<div class="push"></div><!--push在此为footer占位，高度和footer的一样-->
+        	</div>
+        	<div class="footer ch">
+            	<div class="container">
+                	<h4>© 2026 星痕. All Rights Reserved. /
+                
+                	Powered by
+                	<a target="_blank" href="https://github.com/Geekertao/CF-Workers-GitHub-Proxy/">CF-Workers-GitHub-Proxy </a>提供技术支持 & 托管于
+                	<a target="_blank" href="https://www.cloudflare.com/">Cloudflare </a>
+            	</div>
+        	</div>
 
 			<script>
 				function toSubmit(e) {
