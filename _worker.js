@@ -583,7 +583,7 @@ async function githubInterface() {
                 <p>安装插件后，访问 GitHub 时自动按规则通过加速节点下载，无需手动拼接链接。支持 Edge / Chrome 及兼容内核浏览器。</p>
                 <p>插件托管于蓝奏云（点击下方按钮跳转下载页）。</p>
                 <div style="margin-top:16px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
-                    <a href="https://wwazk.lanzouq.com/icC5G4466y7c">
+                    <a href="https://wwazk.lanzouq.com/iTwQH44704ej">
                         <button class="btn" id="pluginDownBtn">下载插件</button>
                     </a>
                     <p style="width:100%; margin-top:10px; font-size:0.9rem; color:rgba(240,246,252,0.8);">
