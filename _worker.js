@@ -578,7 +578,7 @@ async function githubInterface() {
                 <p>💾 commit文件：<span class="url-part">github.com/hunshcn/project/blob/123/filename</span></p>
                 <p>🖨️ gist：<span class="url-part">gist.githubusercontent.com/cielpy/123/raw/cmd.py</span></p>
             </div>
-
+<!--
             <section class="example">
                 <div class="example-title">🧩 浏览器插件：</div>
                 <p>安装插件后，访问 GitHub 时自动按规则通过加速节点下载，无需手动拼接链接。支持 Edge / Chrome 及兼容内核浏览器。</p>
@@ -594,6 +594,7 @@ async function githubInterface() {
                     </p>
                 </div>
             </section>
+-->
         </div>
     </div>
 
