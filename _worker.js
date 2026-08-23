@@ -235,6 +235,7 @@ async function githubInterface() {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub 文件加速</title>
+	<link rel="icon" href="https://5sxh.pages.dev/favicon/favicon.ico">
     <style>
         /* 全局变量与基础重置 */
         :root {
