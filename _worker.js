@@ -229,13 +229,12 @@ export default {
 
 async function githubInterface() {
 	const html = `
-		<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub 文件加速</title>
-	<link rel="icon" href="https://5sxh.pages.dev/favicon/favicon.ico">
     <style>
         /* 全局变量与基础重置 */
         :root {
@@ -243,8 +242,6 @@ async function githubInterface() {
             --secondary-color: #161b22;
             --text-color: #f0f6fc;
             --accent-color: #58a6ff;
-            --gradient-start: #24292e;
-            --gradient-end: #0d1117;
             --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             --border-color: rgba(255, 255, 255, 0.1);
             --github-corner-bg: #f0f6fc;
@@ -260,10 +257,16 @@ async function githubInterface() {
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             min-height: 100vh;
-            background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+            /* 背景：使用 URL 图片，并添加暗色叠加层保证文字可读性 */
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: var(--text-color);
             display: flex;
-            flex-direction: column;      /* 使页脚可以自然下推 */
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 20px;
@@ -273,7 +276,7 @@ async function githubInterface() {
         .main-wrapper {
             width: 100%;
             max-width: 800px;
-            flex: 1 0 auto;            /* 占据剩余空间，将页脚推到底部 */
+            flex: 1 0 auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -391,18 +394,18 @@ async function githubInterface() {
             color: var(--accent-color);
         }
 
-        /* ----- 页脚样式 (完全符合要求: 底部波浪 与 版权信息) ----- */
+        /* ----- 页脚样式 (底部波浪 + 版权) ----- */
         .footer {
             width: 100%;
             max-width: 800px;
             margin-top: 2rem;
             padding: 1.8rem 1.5rem;
-            background: rgba(0, 0, 0, 0.25);
+            background: rgba(0, 0, 0, 0.35);
             border-radius: 20px 20px 0 0;
             backdrop-filter: blur(4px);
             border-top: 1px solid var(--border-color);
             text-align: center;
-            flex-shrink: 0;           /* 防止被压缩 */
+            flex-shrink: 0;
         }
 
         .footer h4 {
@@ -450,6 +453,7 @@ async function githubInterface() {
             box-shadow: 0 6px 14px rgba(88, 166, 255, 0.5);
         }
 
+        /* GitHub Corner (保持不变) */
         .github-corner {
             position: fixed;
             top: 0;
@@ -540,7 +544,7 @@ async function githubInterface() {
     </style>
 </head>
 <body>
-    <!-- GitHub Corner (保持不变) -->
+    <!-- GitHub Corner -->
     <a href="https://github.com/xsxinghen" target="_blank" class="github-corner" aria-label="View source on Github">
         <svg viewBox="0 0 250 250" aria-hidden="true">
             <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -549,7 +553,7 @@ async function githubInterface() {
         </svg>
     </a>
 
-    <!-- 主要包裹器，用于推页脚 -->
+    <!-- 主要包裹器 -->
     <div class="main-wrapper">
         <div class="container">
             <h1 class="title"><span class="emoji">📦</span>GitHub 文件加速</h1>
@@ -578,13 +582,13 @@ async function githubInterface() {
                 <p>💾 commit文件：<span class="url-part">github.com/hunshcn/project/blob/123/filename</span></p>
                 <p>🖨️ gist：<span class="url-part">gist.githubusercontent.com/cielpy/123/raw/cmd.py</span></p>
             </div>
-<!--
+
             <section class="example">
                 <div class="example-title">🧩 浏览器插件：</div>
                 <p>安装插件后，访问 GitHub 时自动按规则通过加速节点下载，无需手动拼接链接。支持 Edge / Chrome 及兼容内核浏览器。</p>
                 <p>插件托管于蓝奏云（点击下方按钮跳转下载页）。</p>
                 <div style="margin-top:16px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
-                    <a href="https://wwazk.lanzouq.com/iwxdf4471f6d">
+                    <a href="https://wwazk.lanzouq.com/iRvDk443m9ib">
                         <button class="btn" id="pluginDownBtn">下载插件</button>
                     </a>
                     <p style="width:100%; margin-top:10px; font-size:0.9rem; color:rgba(240,246,252,0.8);">
@@ -594,11 +598,10 @@ async function githubInterface() {
                     </p>
                 </div>
             </section>
--->
         </div>
     </div>
 
-    <!-- ===== 页脚 (底部波浪 + 版权) 已按要求独立出来 ===== -->
+    <!-- 页脚 (底部波浪 + 版权) -->
     <div class="footer">
         <div class="container">
             <h4>
